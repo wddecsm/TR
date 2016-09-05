@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity">
+    <TextView
+        style="@style/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_gravity="center_horizontal" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <SearchView
+        android:background="@drawable/round"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        />
+        <Button
+            android:textColor="#fdfdfd"
+            android:text="搜索"
+            android:background="@drawable/soushuo"
+            android:id="@+id/home_btn"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/adware_style_selected"
+            android:id="@+id/home_img1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/adware_style_default"
+            android:id="@+id/home_img2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/adware_style_default"
+            android:id="@+id/home_img3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:drawableLeft="@mipmap/home_img_1"
+        android:id="@+id/home_text1"
+        style="@style/home_text"
+        android:text="@string/home_text1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_text_heght" />
+    <TextView
+        android:drawableLeft="@mipmap/home_img_2"
+        android:id="@+id/home_text2"
+        style="@style/home_text"
+        android:text="@string/home_text2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_text_heght" />
+    <TextView
+        android:drawableLeft="@mipmap/home_img_3"
+    android:id="@+id/home_text3"
+    style="@style/home_text"
+    android:text="@string/home_text3"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_text_heght" />
+    <TextView
+        android:drawableLeft="@mipmap/home_img_4"
+    android:id="@+id/home_text4"
+    style="@style/home_text"
+    android:text="@string/home_text4"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_text_heght" />
+    <TextView
+        android:drawableLeft="@mipmap/home_img_5"
+    android:id="@+id/home_text5"
+    style="@style/home_text"
+    android:text="@string/home_text5"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_text_heght" />
+    <TextView
+        android:drawableLeft="@mipmap/home_img_6"
+    android:id="@+id/home_text6"
+    style="@style/home_text"
+    android:text="@string/home_text6"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_text_heght" />
+</LinearLayout>
+    </ScrollView>
+    <LinearLayout
+    android:layout_weight="0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.zhuoxin.shopping.Base.BaseActionbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.zhuoxin.shopping.Base.BaseActionbar>
+</LinearLayout>
+    </LinearLayout>

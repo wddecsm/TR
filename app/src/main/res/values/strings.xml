@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">超屌购物商城</string>
+    <string name="home_text1">限时抢购</string>
+    <string name="home_text2">促销快报</string>
+    <string name="home_text3">新品上架</string>
+    <string name="home_text4">热门单品</string>
+    <string name="home_text5">推荐品牌</string>
+    <string name="home_text6">敬请期待</string>
+</resources>
